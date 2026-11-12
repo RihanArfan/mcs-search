@@ -1,0 +1,10 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "contentMappers": [
+    {
+      "package": "@vue/content-mapper",
+      "extensions": [".vue"],
+      "options": { "target": 3.5 }
+    }
+  ]
+}

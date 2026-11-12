@@ -1,0 +1,33 @@
+{
+  "name": "mcs-search",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "postinstall": "nuxi prepare",
+    "prepare": "vp config",
+    "typecheck": "tsc --runExternalCode --noEmit",
+    "task:installers": "curl -X POST http://localhost:3000/_nitro/tasks/installers:update"
+  },
+  "dependencies": {
+    "@nuxt/cli": "npm:@nuxt/cli-nightly@4.1.0-2611110034-07ea7da",
+    "@nuxt/ui": "^4.12.0",
+    "@types/node": "^26.6.6",
+    "@vueuse/nuxt": "15.0.0",
+    "maplibre-gl": "^6.17.0",
+    "nuxt": "npm:nuxt-nightly@^5.0.0-2611110934-dd0e705",
+    "tailwindcss": "^4.3.5",
+    "vue": "^3.5.45"
+  },
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.153",
+    "@types/geojson": "^7946.0.16",
+    "@vue/content-mapper": "4.0.0-alpha.3",
+    "nitro": "3.0.261103-rc",
+    "typescript": "7.1.0-beta",
+    "vite-plus": "catalog:"
+  }
+}
