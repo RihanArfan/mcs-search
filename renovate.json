@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices", "group:vitePlus"],
+  "semanticCommits": "enabled",
+  "automergeType": "branch",
+  "schedule": ["before 6am on monday"],
+  "packageRules": [
+    {
+      "description": "Automerge non-major updates, pins and digests once CI passes",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
+}
